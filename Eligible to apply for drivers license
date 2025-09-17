@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+    cout<<"enter your age:";
+    cin>> age;
+    
+    try{
+        if (age<18){
+         throw age;
+            
+        }
+        cout<<"You are eligible to apply for driver's license"<<endl;
+    }
+catch(int a){
+cout<<"You are not eligible to apply for driver's license"<<endl;
+        
+    }
+    return 0;
+}
+//output
+enter your age:21
+You are eligible to apply for driver's license
+
